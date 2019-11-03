@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+    <string name="welcome">Welcome</string>
+    <string name="roomName">roomName</string>
+    <string name="Send">Send</string>
+    <string name="RoomName">RoomName</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="user_name">User Name</string>
+    <string name="room_name">Room Name</string>
+    <string name="join_room">Join Room</string>
+</resources>
