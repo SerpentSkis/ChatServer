@@ -9,35 +9,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     public static final String ROOM_NAME = "com.example.chatapp.ROOM_NAME";
-
-    public static String roomNameString;
-    public static String userNameString;
-
+    public static final String USER_NAME = "com.example.chatapp.USER_NAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
-    /**
-     * Called when the user taps the Join Room button
-     */
     public void joinRoom(View view) {
-        Intent chatRoomIntent = new Intent(this, ChatRoom.class);
+        Intent chatRoomIntent = new Intent(this, ChatRoomActivity.class);
         EditText roomNameEditText = findViewById(R.id.roomName);
         EditText userNameEditText = findViewById(R.id.userName);
-
-        roomNameString = roomNameEditText.getText().toString();
-        userNameString = userNameEditText.getText().toString();
-
-
-        chatRoomIntent.putExtra(MainActivity.ROOM_NAME, roomNameString);
+        chatRoomIntent.putExtra(MainActivity.ROOM_NAME, roomNameEditText.getText().toString());
+        chatRoomIntent.putExtra(MainActivity.USER_NAME, userNameEditText.getText().toString());
         startActivity(chatRoomIntent);
-
-
     }
-
-
 }
