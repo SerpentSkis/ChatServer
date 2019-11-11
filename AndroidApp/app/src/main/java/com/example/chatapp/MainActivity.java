@@ -24,5 +24,6 @@ public class MainActivity extends AppCompatActivity {
         chatRoomIntent.putExtra(MainActivity.ROOM_NAME, roomNameEditText.getText().toString());
         chatRoomIntent.putExtra(MainActivity.USER_NAME, userNameEditText.getText().toString());
         startActivity(chatRoomIntent);
+
     }
 }
