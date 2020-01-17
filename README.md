@@ -1,5 +1,5 @@
 # JavaChatServer
-Java chat server from "scratch" utilizing websockets with Java NIO Channels, Non-blocking IO, and Selectors. Packets are read bitwise and encrypted using SHA1. 
+Java chat server from "scratch" utilizing websockets with Java NIO Channels, Non-blocking IO, and Selectors. Packets are read using bit manipulations and encrypted using SHA1. 
 
 Also have a functional andriod app that cannnect with the browser client.
 
